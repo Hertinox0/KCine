@@ -1,7 +1,9 @@
 # 🎬 KCiné - Android Mobile App (2023)
 
-![Login screen preview](https://github.com/kenzohj/KCine/blob/main/login.png "📷")
-![Register screen preview](https://github.com/kenzohj/KCine/blob/main/register.png "📷")
+<p align="center">
+  <img alt="Login screen preview" src="https://github.com/kenzohj/KCine/blob/main/login.png" width="200">
+  <img alt="Register screen preview" src="https://github.com/kenzohj/KCine/blob/main/register.png" width="200">
+</p>
 
 **🇫🇷 Français | [🇬🇧 English below](#-english-version-)**  
 
