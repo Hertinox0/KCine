@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lighest_blue"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Image de l'article -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/image_film"
+        android:src="@drawable/logo_kcine" />
+
+    <!-- Informations de l'article -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Titre de l'article -->
+        <TextView
+            android:id="@+id/film_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_film"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/kanit_bold" />
+
+        <!-- Date de l'article -->
+        <TextView
+            android:id="@+id/film_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/article_date"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/kanit_regular" />
+
+        <!-- Durée de l'article -->
+        <TextView
+            android:id="@+id/film_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/length_film"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/kanit_italic" />
+
+    </LinearLayout>
+
+    <!-- Bouton de suppression -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/trash_icon"
+        app:iconGravity="start"
+        app:iconTint="@color/dark_blue"
+        app:iconPadding="0dp"
+        app:iconSize="24dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/delete_button" />
+
+</LinearLayout>

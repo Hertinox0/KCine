@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Kciné</string>
+    <string name="mail_input">Votre adresse mail</string>
+    <string name="connection_title">Connexion</string>
+    <string name="password_input">Votre mot de passe</string>
+    <string name="connect_button">Se connecter</string>
+    <string name="register_button">Créer un compte</string>
+    <string name="register_title">Inscription</string>
+    <string name="email_confirm">Confirmez votre email</string>
+    <string name="firstname_input">Votre prénom</string>
+    <string name="lastname_input">Votre nom</string>
+    <string name="password_confirm">Confirmez votre mot de passe</string>
+    <string name="stupid_login"><u>Vous avez déjà un compte ? Connectez-vous</u></string>
+    <string name="stupid_register"><u>Vous n\'avez pas de compte ? Créez-en un.</u></string>
+    <string name="invalid_credentials">Email ou mot de passe invalide</string>
+    <string name="email_already_exist">Email déjà utilisé</string>
+    <string name="login_success">Bonjour %s !</string>
+    <string name="register_success">Bienvenue sur KCiné %s !</string>
+
+    <string name="tab_home">Accueil</string>
+    <string name="tab_user">Compte</string>
+    <string name="tab_cart">Panier</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="title_film">TITRE</string>
+    <string name="image_film">image</string>
+    <string name="language_film">Langue</string>
+    <string name="length_film">Durée</string>
+    <string name="synopsis_film">Synopsis</string>
+    <string name="cinema_image">Cinema image</string>
+    <string name="cinema_name">Nom du cinéma</string>
+    <string name="cinema_address">Adresse du cinéma</string>
+    <string name="cinema_distance">XX km</string>
+    <string name="reload">↺</string>
+    <string name="cinema_names">nom de cinema</string>
+    <string name="cart_order">commander</string>
+    <string name="article_date">DAY X MONTH AT HH:mm</string>
+    <string name="disconnect">Se déconnecter</string>
+    <string name="keep_connect">Rester connecté</string>
+    <string name="no_reservation">Aucune réservation</string>
+    <string name="no_notif">Aucune notification</string>
+</resources>

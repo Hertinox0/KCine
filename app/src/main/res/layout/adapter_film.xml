@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Titre du film -->
+    <TextView
+        android:id="@+id/titreTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/title_film"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/kanit_bold" />
+
+    <!-- Image du film -->
+    <ImageView
+        android:id="@+id/imageFilm"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@id/titreTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/image_film"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Informations du film -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/linearInfo"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/imageFilm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp">
+
+        <!-- Date de sortie -->
+        <TextView
+            android:id="@+id/LanguageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/language_film"
+            android:fontFamily="@font/kanit_italic" />
+
+        <!-- Durée du film -->
+        <TextView
+            android:id="@+id/dureeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:text="@string/length_film"
+            android:fontFamily="@font/kanit_italic" />
+
+    </LinearLayout>
+
+    <!-- Synopsis du film -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/synopsisTextView"
+        android:text="@string/synopsis_film"
+        app:layout_constraintTop_toBottomOf="@id/linearInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/kanit_regular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

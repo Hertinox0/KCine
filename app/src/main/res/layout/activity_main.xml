@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Titre de l'application -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:fontFamily="@font/kanit_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Barre de navigation -->
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/top_bar"
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:abb_tabColor="@color/white"
+        app:abb_tabColorSelected="@color/light_blue"
+        app:abb_tabColorDisabled="@color/black"
+        app:abb_selectedTabType="text"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorColor="@color/light_blue"
+        app:abb_indicatorMargin="16dp"
+        app:abb_indicatorHeight="4dp"
+        app:abb_tabs="@menu/tabs"
+        app:abb_selectedIndex="0"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Liste des cinemas -->
+    <ListView
+        android:id="@+id/cinemaList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp" />
+
+    <!-- Barre de recherche -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cinemaList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceBar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="200dp"
+            app:layout_constraintEnd_toStartOf="@+id/updateList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/updateList"
+            android:max="50"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/custom_thumb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceText"
+            android:text="∞"
+            android:fontFamily="@font/kanit_regular"
+            app:layout_constraintEnd_toStartOf="@id/updateList"
+            app:layout_constraintStart_toEndOf="@id/distanceBar"
+            app:layout_constraintTop_toTopOf="@id/updateList"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Boutton pour mettre a jour la liste avec deplacement de loc -->
+        <Button
+            android:id="@+id/updateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/reload"
+            android:textColor="@color/white"
+            android:fontFamily="@font/kanit_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
