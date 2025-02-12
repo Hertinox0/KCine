@@ -62,7 +62,7 @@ public class NotificationsActivity extends AppCompatActivity implements PostExec
      * Initialisation de la liste des articles
      */
     private void initArticlesList() {
-        final String url = "http://iut.hyside.fr:9090/article/notif?userId=" + SessionManager.getUserId();
+        final String url = "http://localhost:9090/article/notif?userId=" + SessionManager.getUserId();
         Log.d("NotificationsActivity", "initArticlesList: " + url);
         new HttpAsyncGet<>(url, Article.class, this, new ProgressDialog(NotificationsActivity.this) );
     }
