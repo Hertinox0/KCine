@@ -69,7 +69,7 @@ public class AccountActivity extends AppCompatActivity implements PostExecuteAct
      * Initialisation de la liste des articles
      */
     private void initArticlesList() {
-        final String url = "http://localhost:9090/article/all?userId=" + SessionManager.getUserId();
+        final String url = "http://127.0.0.1:9090/article/all?userId=" + SessionManager.getUserId();
         Log.d("AccountActivity", "initArticlesList: " + url);
         new HttpAsyncGet<>(url, Article.class, this, new ProgressDialog(AccountActivity.this) );
     }
