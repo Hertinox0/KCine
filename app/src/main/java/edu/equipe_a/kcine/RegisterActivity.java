@@ -98,7 +98,7 @@ public class RegisterActivity extends AppCompatActivity implements PostExecuteAc
      * @param password mot de passe
      */
     public void register(String firstName, String lastName, String email, String password) {
-        String url = "http://localhost:9090/user/create?firstName=" + firstName + "&lastName=" + lastName + "&email=" + email + "&password=" + password;
+        String url = "http://127.0.0.1:9090/user/create?firstName=" + firstName + "&lastName=" + lastName + "&email=" + email + "&password=" + password;
         new HttpAsyncGet<>(url, User.class, this, null);
     }
 
