@@ -94,7 +94,7 @@ public class LoginActivity extends AppCompatActivity implements PostExecuteActiv
      * @param password mot de passe de l'utilisateur
      */
     public void login(String email, String password) {
-        String url = "http://localhost:9090/user/verify?email=" + email + "&password=" + password;
+        String url = "http://127.0.0.1:9090/user/verify?email=" + email + "&password=" + password;
         new HttpAsyncGet<>(url, User.class, this, new ProgressDialog(LoginActivity.this));
         loginButton.setEnabled(false);
     }
