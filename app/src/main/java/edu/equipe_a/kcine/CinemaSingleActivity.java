@@ -53,7 +53,7 @@ public class CinemaSingleActivity extends AppCompatActivity implements PostExecu
      * Initialisation de la liste des films
      */
     public void initFilmList() {
-        String url = "http://localhost:9090/api/filmsbycinema?cinemaId=" + cinemaPosition;
+        String url = "http://127.0.0.1:9090/api/filmsbycinema?cinemaId=" + cinemaPosition;
         Log.d("CinemaSingleActivity", "initFilmList: " + url);
         new HttpAsyncGet<>(url, Film.class, this, new ProgressDialog(CinemaSingleActivity.this) );
     }
