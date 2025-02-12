@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements PostExecuteActivi
         final double longitude = location.getLongitude();
         final double latitude = location.getLatitude();
         Log.d("MainActivity", "initListCinema: " + location.getLatitude() + " " + location.getLongitude());
-        final String url = "http://iut.hyside.fr:9090/api/closest?latitude=" + location.getLatitude() + "&longitude=" + location.getLongitude() + "&n=19";
+        final String url = "http://localhost:9090/api/closest?latitude=" + location.getLatitude() + "&longitude=" + location.getLongitude() + "&n=19";
         Log.d("MainActivity", "initListCinema: " + url);
         new HttpAsyncGet<>(url, Cinema.class, this, new ProgressDialog(MainActivity.this));
     }
