@@ -51,8 +51,8 @@ Ce projet a été développé dans un cadre scolaire et n'est pas destiné à un
 
 This project was developed as part of our **2nd year in a Computer Science Bachelor’s program (BUT Informatique)**. The application was created by:  
 
-- [Corentin Bonjour](https://github.com/CorentinBonjour)  
-- [Lilian Farchetto](https://github.com/LilianFarchetto)
+- [Corentin Bonjour](https://github.com/corentinbjr)  
+- [Lilian Farchetto](https://github.com/Hertinox0)
 - [Kenzo Hambli](https://github.com/KenzoHJ)
 
 **KCiné** is a mobile application that allows users to search for nearby **cinemas** using a **REST API**, view available movies with their schedules, and book a session (fictionally).  
